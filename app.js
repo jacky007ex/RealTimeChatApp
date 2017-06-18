@@ -19,7 +19,7 @@ var Session= Session({
 
 
 io.use(function(socket, next) {
-	    Session(socket.request, socket.request.res, next);
+	Session(socket.request, socket.request.res, next);
 });
 
 
